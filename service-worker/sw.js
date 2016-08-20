@@ -24,7 +24,11 @@ var filesToCache = [
                      '/leaflet/leaflet.js',  
                      '/leaflet/leaflet.css',
                      '/image/mapicon.png',
-                      '/pwademo/pwademo.nocache.js'];
+                      '/pwademo/pwademo.nocache.js',
+                      '/pwademo/A3DD6C55E113731240D24DE00CB02416.cache.js',
+                       '/pwademo/deferredjs/1F2278A7BD2741D7BEEED226CE79BC93/1.cache.js',
+                       '/pwademo/deferredjs/1F2278A7BD2741D7BEEED226CE79BC93/2.cache.js',
+                       '/pwademo/deferredjs/1F2278A7BD2741D7BEEED226CE79BC93/3.cache.js'];
 
 self.addEventListener('install', function(e) {  
   console.log('[ServiceWorker] Install');  
@@ -38,25 +42,24 @@ self.addEventListener('install', function(e) {
 
 
 self.addEventListener('activate', function(e) {  
-	  console.log('[ServiceWorker] Activate');  
-	  e.waitUntil(  
-	    caches.keys().then(function(keyList) {  
-	      return Promise.all(keyList.map(function(key) {  
-	        console.log('[ServiceWorker] Removing old cache', key);  
-	        if (key !== cacheName) {  
-	          return caches.delete(key);  
-	        }  
-	      }));  
-	    })  
-	  );  
-	});
+      console.log('[ServiceWorker] Activate');  
+      e.waitUntil(  
+        caches.keys().then(function(keyList) {  
+          return Promise.all(keyList.map(function(key) {  
+            console.log('[ServiceWorker] Removing old cache', key);  
+            if (key !== cacheName) {  
+              return caches.delete(key);  
+            }  
+          }));  
+        })  
+      );  
+    });
 
 self.addEventListener('fetch', function(e) {  
-	  console.log('[ServiceWorker] Fetch', e.request.url);  
-	  e.respondWith(  
-	    caches.match(e.request).then(function(response) { 
-        console.log('fetching from cache'); 
-	      return fetch(e.request);  
-	    })  
-	  );  
-	});
+    console.log('[ServiceWorker] Fetch', e.request.url);  
+  e.respondWith(  
+    caches.match(e.request).then(function(response) {  
+      return response || fetch(e.request);  
+    })  
+  );  
+    });
