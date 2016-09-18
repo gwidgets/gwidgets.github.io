@@ -1,1 +1,0 @@
-$wnd.pwademo.runAsyncCallback2("Jh(126,1,ks);_.w=function Dk(){var a;a=$wnd.L.map('parisMap',null);$wnd.L.tileLayer(is,null).addTo(a);a.setView($wnd.L.latLng(48.876905,2.37605),Dl(12),null)};tr(Db)(2);\n//# sourceURL=pwademo-2.js\n")
