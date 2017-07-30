@@ -143,7 +143,7 @@
       <li><a href='./../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
       <li><a href='./../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
       <li><a href='./../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
-      <li><a href='./../../doc/latest/DevGuideCodingBasicsJsinterop.html' title="JsInterop">JavaScript: JsInterop</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJsinterop.html' title="Jsinterop">JavaScript: Jsinterop</a></li>
       <li><a href='./../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
       <li><a href='./../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
     </ul></li>
@@ -353,7 +353,7 @@
       <li><a href='./../../doc/latest/DevGuideCodingBasicsJSON.html'>Working with JSON</a></li>
       <li><a href='./../../doc/latest/DevGuideCodingBasicsXML.html'>Working with XML</a></li>
       <li><a href='./../../doc/latest/DevGuideCodingBasicsJSNI.html' title="JavaScript Native Interface">JavaScript: JSNI</a></li>
-      <li><a href='./../../doc/latest/DevGuideCodingBasicsJsinterop.html' title="JsInterop">JavaScript: JsInterop</a></li>
+      <li><a href='./../../doc/latest/DevGuideCodingBasicsJsinterop.html' title="Jsinterop">JavaScript: Jsinterop</a></li>
       <li><a href='./../../doc/latest/DevGuideCodingBasicsOverlay.html'>Overlay Types</a></li>
       <li><a href='./../../doc/latest/DevGuideCodingBasicsDeferred.html'>Deferred Binding</a></li>
     </ul></li>
@@ -547,10 +547,20 @@ public class JSON {
     </li>
     <li> @JsType is not transitive. If the child objects are to be exposed to javascript, they need to be annotated as well. 
     </li>
-  </ul><h2>Consuming a javascript function with a callback argument:</h2><p>Jsinterop can also be used to map a javascript function to a java interface using <code>@JsFunction</code>. Unlike Java, methods can be used as arguments to other methods in javascript(known as callback argument). A javascript callback can be mapped to a Java functional interface (an inteface with only one method) annotated with <code>@JsFunction</code>. The example below is inspired from Elemental 2 source code: ``` @JsFunction public interface EventListenerCallback {</p>
-<pre><code>void callEvent(Object event);
-</code></pre><p>} <code>
-</code>java @JsType(isNative = true) public class Element {  //other methods</p><p>public native void addEventListener(String eventType, EventListenerCallback fn); } ```</p>
+  </ul><h2>Consuming a javascript function with a callback argument:</h2><p>Jsinterop can also be used to map a javascript function to a java interface using <code>@JsFunction</code>. Unlike Java, methods can be used as arguments to other methods in javascript(known as callback argument). A javascript callback can be mapped to a Java functional interface (an inteface with only one method) annotated with <code>@JsFunction</code>. The example below is inspired from Elemental 2 source code:</p>
+<pre><code>@JsFunction
+public interface EventListenerCallback {
+
+    void callEvent(Object event);
+}
+</code></pre>
+<pre><code>@JsType(isNative = true)
+public class Element  {
+ //other methods
+
+  public native void addEventListener(String eventType, EventListenerCallback fn);
+}
+</code></pre>
 <pre><code>Element element = DomGlobal.document.createElement(&quot;button&quot;);
 //using java 8  syntax
 element.addEventListener(&quot;click&quot;, (event) -&gt; {
