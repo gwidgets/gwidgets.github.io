@@ -1,0 +1,25 @@
+-classpath
+'/home/zakaria1/Desktop/Desktop/myWork/GWidgets/workspace/gwty-leaflet_/gwty-leaflet/target/classes:/home/zakaria1/.m2/repository/com/google/elemental2/elemental2-core/1.0.0-RC1/elemental2-core-1.0.0-RC1.jar:/home/zakaria1/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/home/zakaria1/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-sources.jar:/home/zakaria1/.m2/repository/com/google/jsinterop/base/1.0.0-RC1/base-1.0.0-RC1.jar:/home/zakaria1/.m2/repository/com/google/elemental2/elemental2-promise/1.0.0-RC1/elemental2-promise-1.0.0-RC1.jar:/home/zakaria1/.m2/repository/com/google/gwt/gwt-user/2.8.2/gwt-user-2.8.2.jar:/home/zakaria1/.m2/repository/com/google/elemental2/elemental2-svg/1.0.0-RC1/elemental2-svg-1.0.0-RC1.jar:/home/zakaria1/.m2/repository/com/google/jsinterop/jsinterop-annotations/1.0.2/jsinterop-annotations-1.0.2-sources.jar:/home/zakaria1/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar:/home/zakaria1/.m2/repository/com/google/jsinterop/jsinterop-annotations/1.0.2/jsinterop-annotations-1.0.2.jar:/home/zakaria1/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/zakaria1/.m2/repository/com/google/elemental2/elemental2-dom/1.0.0-RC1/elemental2-dom-1.0.0-RC1.jar'
+-encoding
+'UTF-8'
+-protected
+-quiet
+-sourcepath
+'/home/zakaria1/Desktop/Desktop/myWork/GWidgets/workspace/gwty-leaflet_/gwty-leaflet/src/main/java:/home/zakaria1/Desktop/Desktop/myWork/GWidgets/workspace/gwty-leaflet_/gwty-leaflet/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2018 <a href="http://www.g-widgets.com/">G-Widgets</a>. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/zakaria1/Desktop/Desktop/myWork/GWidgets/workspace/gwty-leaflet_/gwty-leaflet/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'gwty-leaflet 1.0 API'
+-linkoffline
+'http://docs.oracle.com/javase/7/docs/api' '/home/zakaria1/Desktop/Desktop/myWork/GWidgets/workspace/gwty-leaflet_/gwty-leaflet/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'gwty-leaflet 1.0 API'
