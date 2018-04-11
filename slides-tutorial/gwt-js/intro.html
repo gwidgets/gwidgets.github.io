@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introduction</title>
+    <meta name="description" content="r">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
+   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
+  </head>
+  <body>
+    <script>
+      window.onload = function() {
+
+       var gwtComponents = document.getElementsByClassName("gwtcomponent");
+
+          for(var i = 0; i < gwtComponents.length; i++) {
+            gwtComponents[i].addEventListener("click", function(e){
+              if (e.target.style.textDecoration === "line-through")
+               e.target.style.textDecoration = "";
+              else 
+               e.target.style.textDecoration = "line-through";        
+            })
+          }
+      }    
+    </script>
+    <style>
+    .timeline {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.li {
+  transition: all 200ms ease-in;
+}
+
+.timestamp {
+  margin-bottom: 20px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 100;
+}
+.status {
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #D6DCE0;
+  position: relative;
+  transition: all 200ms ease-in;
+}
+ .status h4 {
+    font-weight: 600;
+ }
+ .status h4:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: -15px;
+    left: 42%;
+    transition: all 200ms ease-in; 
+ }
+.li .complete .status {
+    border-top: 2px solid #66DC71;
+}
+.li .complete .status:before {
+      background-color: #66DC71;
+      border: none;
+      transition: all 200ms ease-in;
+} 
+.li .complete .status .h4 {
+      color: #66DC71;
+}
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+    </style>
+    <main role="main">
+      <article id="webslides">
+
+        <section class="bg-black-blue aligncenter">
+         <span class="background dark" style="background-image:url('https://source.unsplash.com/6njoEbtarec/')"></span>
+          <div class="wrap">
+            <p class="text-subtitle">Introduction</p>
+            <h1 class="text-landing"><img class="size-10" style="width: 4%" src="http://www.gwtproject.org/assets/build/img/logoBig.png" />GWT Compiler</h1>
+            <p>
+              <a class="button ghost" href="https://github.com/gwtproject/gwt" title="GWT source code" target="_blank">
+                <svg class="fa-github">
+                  <use xlink:href="#fa-github"></use>
+                </svg>
+                Source code: https://github.com/gwtproject/gwt  
+              </a>
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="aligncenter">
+            <h2>is GWT dead ? </h2>
+            <p>or no...</p>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <div class="alignleft size-50">
+                <ul class="timeline" id="timeline">
+                    <li class="li complete">
+                      <div class="timestamp">
+                        <span class="author">2.8.0-beta1</span>
+                        <span class="date">13/11/2015<span>
+                      </div>
+                      <div class="status">
+                        <h4> </h4>
+                      </div>
+                    </li>
+                    <li class="li complete">
+                      <div class="timestamp">
+                        <span class="author">2.8.0</span>
+                        <span class="date">4/10/2016<span>
+                      </div>
+                      <div class="status">
+                        <h4> </h4>
+                      </div>
+                    </li>
+                    <li class="li complete">
+                      <div class="timestamp">
+                        <span class="author">2.8.1</span>
+                        <span class="date">19/04/2017<span>
+                      </div>
+                      <div class="status">
+                        <h4> </h4>
+                      </div>
+                    </li>
+                    <li class="li">
+                      <div class="timestamp">
+                        <span class="author">2.8.2</span>
+                        <span class="date">18/10/2017<span>
+                      </div>
+                      <div class="status">
+                        <h4></h4>
+                      </div>
+                    </li>
+                   </ul>      
+            </div>
+            <div class="alignright size-50">
+            <ul>
+                 <li>stagnant devlopment cycle</li>
+                 <li>no clear communication from the team</li>
+                 <li>? over j2cl</li>
+            </ul>
+          </div>
+          </div>
+        </section>
+        <section>
+          <div class="wrap" style="display: flex;">
+              <div class="alignleft">
+                  <h2>However...</h2>
+                  <p><code>this could also mean</code></p>
+                  <ul>
+                      <li>
+                           GWT is stable and mature enough
+                      </li>
+                      <li>
+                          many os projects stop releasing but are still widely used 
+                      </li>
+                      <li>
+                           It could be seen as niche market
+                      </li>
+                    </ul>
+                  </div>
+            <div class="alignright">
+            <table>
+              <tr>
+                <td>
+            <img class="alignright size-10" src="https://media.licdn.com/dms/image/C4E03AQFMF4u170xHLw/profile-displayphoto-shrink_200_200/0?e=1527440400&v=alpha&t=iHUx9zo78SGM3dp_f_J352bWLyYnLoUTm1hz3SUQ2PI">
+            <blockquote class="alignright" style="width: 30%">
+              <p style="word-break: break-word;text-align: justify;">
+                GWT is not dead, GWT is a niche, and it always has been, and within its niche, it is still strong for enterprise applications
+                and the Java advantages are still there. 
+              </p>
+            </blockquote>
+          </td>
+          </tr>
+          <tr>
+          <td>
+            <p style="margin-left: 50%;"><code>David Chandler (2016) - Engineer at Google, worked previously on GWT</code></p>
+          </td>
+          </tr>
+          </table>
+          </div>
+   
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <img class="aligncenter size-20" src="https://i.pinimg.com/originals/83/eb/cf/83ebcfd3570d0f86634fc29240ca408c.png" alt="iPhone">
+            <p class="aligncenter"><code>GWT can still be useful </code></p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="slide-top">
+            <div class="wrap">
+              <div class="content-center">
+                <h3>Use cases</h3>
+                  <p>complement other frameworks</p>
+                  <p>sharing code between client/server (Pojos, interfaces,...etc)</p>
+                  <p>moving existing business logic to the front end</p>
+                  <p>talking to existing Js Librairies</p>
+              </div>
+            </div>
+            <!-- .end .wrap -->
+          </section>
+        <section>
+          <div class="wrap size-50">
+            <h2>
+              GWT components
+            </h2>
+            <hr>
+            <ul class="description">
+              <li><span class="text-label gwtcomponent">gwt-user:</span>Widgets, ui binder, themes, data table, rpc, internationalization</li>
+              <li><span class="text-label gwtcomponent">gwt-dev:</span> gwt compiler, codeserver, core utils,...</li>
+              <li><span class="text-label gwtcomponent">gwt-servlet:</span>servlet for using rpc</li>
+              <li><span class="text-label gwtcomponent">requestfactory:</span>special client-server mechanism oriented towards data</li>
+              <li><span class="text-label gwtcomponent">elemental:</span>browser API wrapper</li>
+              <li><span class="text-label gwtcomponent">jsinterop:</span>annotations that allows to convert js types to java types and vice versa.</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+            <div class="wrap">
+              <h2><strong><img class="size-10" style="width: 4%" src="http://www.gwtproject.org/assets/build/img/logoBig.png" /> GWT compiler</strong></h2>
+              <hr>
+              <div class="grid sm">
+                <div class="column">
+                  <h3> </h3>
+                  <p>Black box that takes java as an input and produces javascript</p>
+                  <p>it emulates core Java functionalities (e.g ArrayList, java.math, ...etc), full list can be found here: <a href="http://www.gwtproject.org/doc/latest/RefJreEmulation.html">http://www.gwtproject.org/doc/latest/RefJreEmulation.html</a></p>
+                  <p>Not all Java runtime classes are supported: file API, Threads, Reflection...</p>
+                </div>
+              </div>
+              <!--end .grid -->
+            </div>
+            <!-- .end .wrap -->
+          </section>
+          <section>
+           
+              <div class="wrap">
+                 
+                <div class="content-left">
+                  <h3>Steps</h3>
+                  <ul class="flexblock specs">
+                    <li>
+                      <div>
+                        <h2>Precompile</h2>
+                        <p> defining permutations </p>
+                        <p> building Java AST </p>
+                        <p> performing some optimizations </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <h2>Compile</h2>
+                       <p> Convert the Java AST to JavaScript AST</p>
+                       <p> Perform optimizations and normalizations</p>
+                      <p> generate javascript code per permutation </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+
+                        <h2>Linking</h2>
+                        <p>generate a single scripts that links/bootstraps all generated fragments</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content-right">
+                <img class="size-10" src="../static/images/compile.png"></img>
+              </div>
+              </div>
+              <!-- .end .wrap -->
+            </section>
+            <section>
+                <div class="wrap">
+                  <h2><strong>Precompile -> defining permutations</strong></h2>
+                  <hr>
+                  <div class="grid sm">
+                    <div class="column">
+                      <h3> </h3>
+                      <p>One permutation per browser * the number of locales</p>
+                      <p> 5 permutations: safari (Chrome, Safari, Opera), ie10, ie9, ie8, gecko1_8 (Mozilla)</p>
+                    </div>
+                  </div>
+                  <!--end .grid -->
+                </div>
+                <!-- .end .wrap -->
+              </section>
+              <section>
+                  <div class="wrap">
+                    <h2><strong>Precompile -> building the GWT Java AST</strong></h2>
+                    <hr>
+                    <div class="grid sm">
+                      <div class="column">
+                        <h3> </h3>
+                        <p>Buids a tree structure (abstract syntax tree) that describes the Java code (tokenization, syntax analysis, semantic analysis,..etc) </p>
+                        <p>intermediary representation</p>
+                      </div>
+                    </div>
+                    <!--end .grid -->
+                  </div>
+                  <!-- .end .wrap -->
+                </section>
+                <section>
+                    <div class="wrap">
+                      <h2><strong>Precompile -> perform optimizations</strong></h2>
+                      <hr>
+                      <div class="grid sm">
+                        <div class="column">
+                          <h3>examples of optimizations</h3>
+                          <ul>
+                            <li>Pruning: removes globally unreferenced classes</li>
+                            <li>Tightening types: making types less general</li>
+                            <li>Dead code elimination: removes unused methods and fields</li>
+                            <li>Finalizing: making fields and methods final where applicable</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+            <section>
+                <div class="wrap">
+                  <h2><strong>Compile</strong></h2>
+                  <hr>
+                  <div class="grid sm">
+                    <div class="column">
+                      <h3> </h3>
+                      <ol>
+                        <li>Converts Java AST to JavaScript AST</li>
+                        <li>Pretty much similar but with Js Types instead</li>
+                        <li>runs more normalizations and optimizations</li>
+                        <li>generates the Js source code</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </section>
+                <section>
+                    <div class="wrap">
+                      <h2><strong>Linking</strong></h2>
+                      <hr>
+                      <div class="grid sm">
+                        <div class="column">
+                          <h3> </h3>
+                          <ol>
+                            <li>generates a .nocache.js script</li>
+                            <li>boostraper that loads the permutations files </li>
+                            <li>Linkers: CrossSiteIframeLinker (default), D8ScriptLinker, SingleScriptLinker</li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+      </article>
+    </main>
+    <script src="../static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+    <script defer src="../static/js/svg-icons.js"></script>
+  </body>
+</html>

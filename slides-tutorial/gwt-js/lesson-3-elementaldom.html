@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elemental</title>
+    <meta name="description" content="r">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+    <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/gwidgets/app.css">
+    <script type="text/javascript" src="http://d2n1jf77q99u48.cloudfront.net/scripts-util.min.js" async=""></script>
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides">
+        <section class="bg-black-blue aligncenter">
+         <span class="background dark" style="background-image:url('https://source.unsplash.com/6njoEbtarec/')"></span>
+          <div class="wrap">
+            <p class="text-subtitle"></p>
+            <h1 class="text-landing"><img class="size-10" style="width: 4%" src="http://www.gwtproject.org/assets/build/img/logoBig.png" /> Using Elemental in GWT</h1>
+          </div>
+        </section>
+        <section class="aligncenter">
+            <!--.wrap = container (width: 90%) with fadein animation -->
+            <div class="wrap">
+              <h2>Elements and Widgets</h2>
+              <p class="text-intro"></p>
+              <div class="grid">
+                <div class="column">
+                  <h6>Elements</h6>
+                  <p>native Js elements</p>
+                  <p>not tied to any API</p>
+                  <p>part of the future of GWT</p>
+                  <p class="text-symbols">* * *</p>
+                </div>
+                <div style="width: 30%; margin-top: 5%">
+                </div>
+                <div class="column">
+                  <h6>Widgets</h6>
+                  <p>Logical representation of a UI element</p>
+                  <p>maybe difficult to customize and style</p>
+                  <p>depends of Widget API and gwt-user</p>
+                  <p class="text-symbols">* * *</p>
+                </div>
+                <!-- end .column -->
+              </div>
+              <!-- end .grid -->
+            </div>
+            <!-- end .wrap -->
+          </section>
+        <section>
+          <div class="wrap" style="display: flex;">
+              <div class="alignleft">
+                  <h2>Elemental 2</h2>
+                  <ul>
+                      <li>
+                           JsInterop generted APIs for browsers
+                      </li>
+                      <li>
+                          generated automatically => accurate and up to date
+                      </li>
+                      
+                    </ul>
+                  </div>
+            <div class="alignright size-50" style="margin-top: 5%">
+            <pre class="brush: java">
+                    public static String extractText() {
+                        return DomGlobal.document.getElementById("lesson").innerHTML;
+                      };
+            </pre>
+          </div>
+   
+          </div>
+        </section>
+        
+        <section>
+                <div class="wrap" style="display: flex;">
+                    <div class="alignleft">
+                        <h2>Browser API</h2>
+                        <ul>
+                            <li>
+                                 used by the browser for rendering the dom,  exposed also for developers 
+                            </li>
+                            <li>
+                               quite standard with some minor differences from one browser to another
+                          </li>
+                            
+                          </ul>
+                       </div>
+                </div>
+              </section>
+      </article>
+    </main>
+    <script src="../static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+    <script defer src="../static/js/svg-icons.js"></script>
+  </body>
+</html>

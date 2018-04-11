@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JsInterop</title>
+    <meta name="description" content="r">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+    <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/gwidgets/app.css">
+    <script type="text/javascript" src="http://d2n1jf77q99u48.cloudfront.net/scripts-util.min.js" async=""></script>
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
+  </head>
+  <body>
+    <style>
+     .noupper{
+       text-transform: none !important;
+     }
+    </style>
+    <main role="main">
+      <article id="webslides">
+        <section class="bg-black-blue aligncenter">
+         <span class="background dark" style="background-image:url('https://source.unsplash.com/6njoEbtarec/')"></span>
+          <div class="wrap">
+            <p class="text-subtitle"></p>
+            <h1 class="text-landing"><img class="size-10" style="width: 4%" src="http://www.gwtproject.org/assets/build/img/logoBig.png" /> Using JsInterop</h1>
+          </div>
+        </section>
+        <section>
+          <div class="wrap" style="display: flex;">
+              <div class="alignleft">
+                  <h2>Before JsInterop...</h2>
+                  <p><code>JSNI (Javascript Native Interface) was used</code></p>
+                  <ul>
+                      <li>
+                           a way of invoking JavaScript within Java and vice versa
+                      </li>
+                      <li>
+                          uses actual JavaScript syntax
+                      </li>
+                      <li>
+                         Talks about being JSNI removed in j2cl
+                    </li>
+                      
+                    </ul>
+                  </div>
+            <div class="alignright size-50" style="margin-top: 5%">
+            <pre class="brush: java">
+                    public static native void extractText() /*-{
+                        $wnd.console.log($wnd.document.getElementById("lesson").innerHTML);
+                      }-*/;
+            </pre>
+          </div>
+   
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <img class="aligncenter size-20" src="https://i.pinimg.com/originals/83/eb/cf/83ebcfd3570d0f86634fc29240ca408c.png" alt="iPhone">
+            <p class="aligncenter"><code>JsInterop was introduced with version 2.8.x to tackle the shortcomings of JSNI, namely wrting Js code inside Java</code></p>
+          </div>
+        </section>
+        <section>
+            <h2 style="text-align:center">Mandatory compiler argument</h2>
+            <div class="wrap">
+               
+              <p class="aligncenter"><code>-generateJsInteropExports</code>                     Generate exports for JsInterop purposes.</p>
+            </div>
+          </section>
+        <section>
+          <div class="wrap size-50">
+            <h2>
+              JsInterop annotations
+            </h2>
+            <hr>
+            <ul class="description">
+              <li><span class="text-label noupper">@JsType</span>indicates a JavaScript type ( exported or native) </li>
+              <li><span class="text-label noupper">@JsConstructor</span>indicates a constructor (in case there are several constructors)</li>
+              <li><span class="text-label noupper">@JsProperty</span>field or getter or setter</li>
+              <li><span class="text-label noupper">@JsMethod</span> indicates a JavaScript method ( exported or native) </li>
+              <li><span class="text-label noupper">@JsFunction</span>allows to use a functional interface as a JavaScript method (e.g callback)</li>
+              <li><span class="text-label noupper">@JsOverlay</span>allows to add new methods to native types</li>
+              <li><span class="text-label noupper">@JsIgnore</span>ignores a method or field when exporting to Js</li>
+              <li><span class="text-label noupper">@JsOptional</span>marks a method parameter as optional (as JavaScript allows) </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+            <div class="wrap size-50">
+              <h2>
+                  @JsType
+              </h2>
+              <hr>
+              <div class="description">
+                <pre class="brush: java">
+                    package com.udemy.demo;
+
+                    @JsType
+                    public class InventoryItem {
+                        
+                        public String id;
+                        
+                        public int quantity;
+                    
+                        //not exposed
+                        private double unitPrice;
+                    
+                        public InventoryItem(String id, int quantity, double unitPrice) {
+                            this.id = id;
+                            this.quantity = quantity;
+                            this.unitPrice = unitPrice;
+                        }
+                    }
+
+                </pre>
+                 <p> From javacript: </p>
+                <pre class="brush: js">
+                    var inventoryItem = new com.udemy.demo.InventoryItem("abc", 10, 15.9);
+
+                </pre>
+              </ul>
+            </div>
+          </section>
+          <section>
+              <div class="wrap size-50">
+                <h2>
+                    @JsConstructor @JsProperty @JsMethod
+                </h2>
+                <hr>
+                <div class="description">
+                  <pre class="brush: java">
+                      package com.udemy.demo;
+                     
+                      public class InventoryItem {       
+                          
+                        @JsProperty
+                        public String id;
+                    
+                        //not exposed
+                        public int quantity;
+                    
+                        //not exposed
+                        public double unitPrice;
+                    
+                    
+                        @JsConstructor
+                        public InventoryItem(String id, int quantity, double unitPrice) {
+                            this.id = id;
+                            this.quantity = quantity;
+                            this.unitPrice = unitPrice;
+                        }
+                    
+                        //not exposed
+                        public InventoryItem(String id, double unitPrice) {
+                            this(id, 0, unitPrice);
+                        }
+                    
+                        @JsMethod
+                        public double getTotalValue() {
+                            return unitPrice * quantity;
+                        }
+                    
+                        //not exposed
+                        public String getId() {
+                            return id;
+                        }
+                      }
+                  </pre>
+                </ul>
+              </div>
+            </section>
+            <section>
+                <div class="wrap size-50">
+                  <h2>
+                      @JsIgnore @JsOptional
+                  </h2>
+                  <hr>
+                  <div class="description">
+                    <pre class="brush: java">
+                        @JsType
+                        public class InventoryItem {
+                        
+                            public String id;
+                        
+                        
+                            public int quantity;
+                        
+                            @JsIgnore //not exposed even if public
+                            public double unitPrice;
+                        
+                        
+                        
+                            public InventoryItem(String id, int quantity, double unitPrice) {
+                                this.id = id;
+                                this.quantity = quantity;
+                                this.unitPrice = unitPrice;
+                            }
+                        
+                        
+                            public double getTotalValue() {
+                                return unitPrice * quantity;
+                            }
+                        
+                            public boolean isThresholdReached(@JsOptional Integer threshold) {
+                                if (threshold == null)
+                                  return quantity > 100;
+                        
+                                return quantity > threshold;
+                            }
+                            
+                            public String getId() {
+                                return id;
+                            }
+                        }
+                    </pre>
+                    <p>javascript</p>
+                    <pre class="brush: js">
+                    var inventoryItem = new com.gwidgets.client.InventoryItem("1", 10, 15.9)
+                    inventoryItem.unitPrice
+                    //undefined
+                    inventoryItem.isThresholdReached()
+                    //false
+                  </pre>
+                  </ul>
+                </div>
+              </section>
+                <section>
+                    <div class="wrap size-50">
+                      <h2>
+                          @JsOverlay
+                      </h2>
+                      <hr>
+                      <div class="description">
+                        <pre class="brush: java">
+                            @JsType(namespace = JsPackage.GLOBAL, isNative = true, name="JSON")
+                            public class JSON {                           
+                                public static native String stringify(Object obj);
+                            
+                                public static native Object parse(String json);
+
+                                @JsOverlay
+                                //can only be used from Java
+                                public final static Object trimAndParse(String json) {
+                                               return parse(json.trim());
+                                }
+                            }
+                        </pre>
+                      </ul>
+                    </div>
+                  </section>
+                  <section>
+                      <div class="wrap size-50">
+                        <h2>
+                            @JsFunction
+                        </h2>
+                        <hr>
+                        <div class="description">
+                          <pre class="brush: java">
+                              @JsFunction
+                              public interface InventoryEvaluator {
+                                  void evaluate(InventoryItem item);
+                              }
+                          </pre>
+                        </ul>
+                      </div>
+                    </section>
+      </article>
+    </main>
+    <script src="../static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+    <script defer src="../static/js/svg-icons.js"></script>
+  </body>
+</html>
