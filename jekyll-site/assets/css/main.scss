@@ -1,0 +1,52 @@
+---
+---
+@font-face {
+  font-family: "American Captain";
+  src: url("{{ site.baseurl }}/assets/fonts/American+Captain.woff") format("woff");
+}
+
+.bg-nav {
+  background: #e54825 !important;
+  opacity: .9 !important;
+}
+
+.navbar {
+  // height: 70px;
+  // padding: 0 !important;
+
+  .navbar-brand {
+    margin: 0 !important;
+    padding: 0 !important;
+    // img {
+    //   height: 100%;
+    //   width: auto;
+    // }
+  }
+
+  .nav-link {
+    color: #fff !important;
+    font-size: 25px;
+    font-family: "American Captain";
+    padding: 15px !important;
+  }
+
+  .navbar-nav {
+    background: #e54825 !important;
+    opacity: .9 !important;
+  }
+
+  .dropdown-menu {
+    background-color: #ff5722 !important;
+    opacity: .9 !important;
+  }
+}
+
+body {
+  background-color: #e5e5e5 !important;
+}
+
+main.container-fluid {
+  background-color: #fff !important;
+  margin: 90px auto 0;
+  padding: 0 25px;
+}
