@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-<article class="article">
+<article>
   {%- if page.header-image -%}
-  <header class="full gradient-overlay--alt">
-    <img class="image image--lazyload full" data-src="/assets/images/{{ page.header-image }}" alt="alt">
+  <header>
+    <img src="{{ page.image }}" alt="page image">
   </header>
   {%- endif -%}
   {{ content }}

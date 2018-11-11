@@ -6,12 +6,12 @@
 }
 
 .bg-nav {
-  background: #e54825 !important;
+  background-color: #e54825 !important;
   opacity: .9 !important;
 }
 
 .navbar {
-  // height: 70px;
+  height: 70px;
   // padding: 0 !important;
 
   .navbar-brand {
@@ -28,17 +28,57 @@
     font-size: 25px;
     font-family: "American Captain";
     padding: 15px !important;
+
+    &:hover {
+      background-color: #ff6404 !important;
+    }
   }
 
   .navbar-nav {
-    background: #e54825 !important;
+    background-color: #e54825 !important;
+    margin: auto;
     opacity: .9 !important;
   }
 
   .dropdown-menu {
     background-color: #ff5722 !important;
-    opacity: .9 !important;
+    .dropdown-item {
+      color: #fff !important;
+    }
+    .dropdown-item:hover {
+      text-decoration: none !important;
+      background-color: #ff6404 !important;
+    }
   }
+}
+
+.btn-social {
+  border: 0 !important;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
+  position: fixed;
+  top: 50px;
+  z-index: 3000 !important;
+  -webkit-appearance: none !important;
+}
+
+.btn-github {
+  @extend .btn-social;
+  background-color: #000 !important;
+  color: #fff !important;
+  right: 18px;
+}
+.btn-twitter {
+  @extend .btn-social;
+  background-color: #00abf0 !important;
+  color: #444 !important;
+  right: 60px;
+}
+.btn-rss {
+  @extend .btn-social;
+  background-color: #e78653 !important;
+  color: #fff !important;
+  right: 103px;
 }
 
 body {
@@ -46,7 +86,52 @@ body {
 }
 
 main.container-fluid {
-  background-color: #fff !important;
-  margin: 90px auto 0;
+  margin: 110px auto 0;
   padding: 0 25px;
+  .wrapper {
+    background-color: #fff !important;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    display: flex;
+    justify-items: flex-end;
+    padding: 40px 20px 20px;
+    width: 100%;
+  }
+
+  .posts {
+    width: 70%;
+  }
+  .post-title a {
+    font-weight: 600;
+  }
+  .post-meta {
+    clear: both;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #9f9f9f;
+  }
+
+  .archive {
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    margin: 0 0 20px;
+    padding: 20px;
+    width: 33%;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0;
+      padding: 0 0 20px;
+    }
+    details {
+      margin-left: .75rem;
+      summary {
+        margin-bottom: .75rem;
+      }
+      ul {
+        list-style: none;
+      }
+    }
+  }
 }

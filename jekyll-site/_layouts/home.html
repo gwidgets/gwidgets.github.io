@@ -1,55 +1,51 @@
 ---
 layout: default
 ---
-<div id="content-blog">
-		<!-- Blog page title -->
-		<?php if ( responsive_free_get_option( 'blog_post_title_toggle' ) ) { ?>
-			<h1> <?php echo responsive_free_get_option( 'blog_post_title_text' ); ?> </h1>
-		<?php } ?>
+<section class="posts">
+  {%- for post in site.posts -%}
+  <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <div class="post-meta">Posted on <a href="{{ post.url }}"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %d, %Y" }}</time></a> by <a href="#">Blogger</a> &mdash; <a href="{{ post.url }}/#">No Comments &#x2B07;</a></div>
+  <div class="post-content">{{ post.content }}</div>
+  {%- endfor -%}
+</section>
 
-		<?php get_template_part( 'loop-header', get_post_type() ); ?>
+<aside class="archive">
+  <h3>Archive</h3>
+{% for post in site.posts  %}
+  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+  {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+  {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
 
-		<?php if ( have_posts() ) : ?>
+  {% if forloop.first %}
+  <details id="{{ this_year }}-ref" open>
+    <summary>{{ this_year }}</summary>
+    <details id="{{ this_year }}-{{ this_month }}-ref" {% if forloop.first %} open {% endif %}>
+      <summary>{{ this_month }}</summary>
+      <ul>
 
-			<?php while( have_posts() ) : the_post(); ?>
+  {% endif %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 
-				<?php responsive_entry_before(); ?>
-				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<?php responsive_entry_top(); ?>
-
-					<?php get_template_part( 'post-meta', get_post_type() ); ?>
-
-					<div class="post-entry">
-
-						<?php if ( has_post_thumbnail() ) : ?>
-							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-								<?php the_post_thumbnail(); ?>
-							</a>
-						<?php endif; ?>
-						<?php the_content( __( 'Read more &#8250;', 'responsive' ) ); ?>
-						<?php wp_link_pages( array( 'before' => '<div class="pagination">' . __( 'Pages:', 'responsive' ), 'after' => '</div>' ) ); ?>
-					</div>
-					<!-- end of .post-entry -->
-
-					<?php get_template_part( 'post-data', get_post_type() ); ?>
-
-					<?php responsive_entry_bottom(); ?>
-				</div><!-- end of #post-<?php the_ID(); ?> -->
-				<?php responsive_entry_after(); ?>
-
-			<?php
-			endwhile;
-
-			get_template_part( 'loop-nav', get_post_type() );
-
-		else :
-
-			get_template_part( 'loop-no-posts', get_post_type() );
-
-		endif;
-		?>
-
-	</div><!-- end of #content-blog -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+  {% if forloop.last %}
+      </ul>
+    </details>
+  </details>
+  {% else %}
+    {% if this_year != next_year %}
+      </details>
+    </details>
+    <details id="{{ next_year }}-ref">
+      <summary>{{next_year}}</summary>
+      <details id="{{ next_year }}-{{ next_month }}-ref">
+        <summary>{{ next_month }}</summary>
+    {% else %}
+      {% if this_month != next_month %}
+      <details id="{{ this_year }}-{{ next_month }}-ref">
+        <summary>{{ next_month }}</summary>
+      </details>
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</aside>
