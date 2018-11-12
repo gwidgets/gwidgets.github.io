@@ -12,15 +12,14 @@
 
 .navbar {
   height: 70px;
-  // padding: 0 !important;
+  padding: 0 !important;
 
   .navbar-brand {
     margin: 0 !important;
     padding: 0 !important;
-    // img {
-    //   height: 100%;
-    //   width: auto;
-    // }
+    img {
+      vertical-align: super;
+    }
   }
 
   .nav-link {
@@ -127,11 +126,61 @@ main.container-fluid {
     details {
       margin-left: .75rem;
       summary {
+        color: #666;
         margin-bottom: .75rem;
+        text-shadow: 2px 2px 1px rgba(0,0,0,.15);
+      }
+      summary::-webkit-details-marker {
+        color: #666;
+        text-shadow: 2px 2px 1px rgba(0,0,0,.15);
       }
       ul {
         list-style: none;
       }
     }
+  }
+}
+
+.project-documentation--container {
+  border: 1px solid #ccc;
+  img {
+    width: 100%;
+  }
+}
+
+.item--dropdown {
+  .item--body-title {
+    padding: 30px 0 15px;
+    color: #34302d;
+    border-bottom: 1px solid #4a4440;
+    border-color: #d7d5d3;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0 20px;
+    text-transform: uppercase;
+  }
+  .item--left-column, .item--right-column {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .item--body--version {
+    border-bottom: 1px solid #4a4540;
+    border-color: #d7d5d3;
+    margin: 0 20px;
+    padding: 7px 0;
+  }
+}
+
+#archetypes {
+  border: 1px solid #ddd;
+  margin: 1.6em 0;
+
+  td, th {
+    padding: .8em;
+    vertical-align: baseline;
+  }
+  table, td, th {
+    border: 1px solid #ddd;
   }
 }
