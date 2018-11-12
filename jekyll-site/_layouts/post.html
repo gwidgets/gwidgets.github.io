@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
-<article>
-  {%- if page.header-image -%}
-  <header>
-    <img src="{{ page.image }}" alt="page image">
-  </header>
-  {%- endif -%}
-  {{ content }}
+<article class="post">
+  <h2 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+  <div class="post-meta">Posted on <a href="{{ page.url }}"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %d, %Y" }}</time></a> by <a href="#">Blogger</a> &mdash; <a href="{{ page.url }}/#">No Comments &#x2B07;</a></div>
+  <div class="post-content">{{ page.content }}</div>
 </article>
+
+{%- include archive.html -%}
