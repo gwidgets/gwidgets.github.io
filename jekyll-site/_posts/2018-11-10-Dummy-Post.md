@@ -1,7 +1,0 @@
----
-layout: post
-title:  "test"
-date:   2018-11-10 16:54:14 -0700
-categories: jekyll update
----
-Dummy test
