@@ -36,6 +36,10 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
+
+paginate: 12
+# paginate_path: "/archive/page:num"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
