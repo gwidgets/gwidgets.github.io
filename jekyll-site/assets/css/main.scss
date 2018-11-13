@@ -93,12 +93,32 @@ main.container-fluid {
     border-radius: 4px;
     display: flex;
     justify-items: flex-end;
-    padding: 40px 20px 20px;
+    // padding: 40px 20px 20px;
+    padding: 20px;
     width: 100%;
   }
 
+  .project-title {
+    left: 33%;
+    position: relative;
+    width: 33%;
+
+    .project-title-header {
+      display: -webkit-inline-box;
+      margin-bottom: 80px;
+    }
+    img {
+      margin-right: 20px;
+      vertical-align: middle;
+      border-style: none;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
   .posts, .post {
-    width: 70%;
+    margin-right: 2rem;
+    width: 100%;
   }
   .post-title a {
     font-weight: 600;
@@ -114,9 +134,8 @@ main.container-fluid {
     background-color: #f9f9f9;
     border: 1px solid #e5e5e5;
     border-radius: 4px;
-    margin: 0 0 20px;
+    margin: 0 0 120px;
     padding: 20px;
-    width: 33%;
     h3 {
       font-size: 1.5rem;
       font-weight: 600;
@@ -136,6 +155,20 @@ main.container-fluid {
       }
       ul {
         list-style: none;
+      }
+    }
+  }
+
+  .blog-partners {
+    padding: 1rem;
+    div {
+        display: flex;
+        flex-direction: row;
+      a {
+        width: 25%;
+        img {
+          width: 100%;
+        }
       }
     }
   }
@@ -182,5 +215,26 @@ main.container-fluid {
   }
   table, td, th {
     border: 1px solid #ddd;
+  }
+}
+
+.navigation {
+  display: flex;
+  font-size: 13px;
+
+  a {
+    color: #aaa;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #111;
+    text-decoration: none;
+  }
+  .previous {
+    flex: 1;
+  }
+  .next {
+    flex: 1;
+    text-align: right;
   }
 }

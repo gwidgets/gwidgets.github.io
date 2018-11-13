@@ -2,13 +2,24 @@
 layout: default
 ---
 <article class="post">
-  <h2 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+  <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-meta">Posted on <a href="{{ page.url }}"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %d, %Y" }}</time></a> by <a href="#">Blogger</a> &mdash; <a href="{{ page.url }}/#">No Comments &#x2B07;</a></div>
   <div class="post-content">{{ page.content }}</div>
   <nav class="navigation">
-    <div class="previous">&#8249; Older posts</div>
-    <div class="next">Newer posts &#8250;</div>
+    {% if page.previous %}
+    <div class="previous" >
+      <a href="{{ page.previous.url }}">&#8249; {{ page.previous.title }}</a>
+    </div>
+    {% endif %}
+    {% if page.next %}
+    <div class="next">
+      <a href="{{ page.next.url }}">{{ page.next.title }} &#8250;</a>
+    </div>
+    {% endif %}
   </nav>
 </article>
 
-{%- include archive.html -%}
+<aside class="">
+  {% include archive-sidebar.html %}
+  {% include blog-partners-sidebar.html %}
+</aside>
