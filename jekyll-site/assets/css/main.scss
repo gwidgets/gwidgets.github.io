@@ -43,10 +43,10 @@
     background-color: #ff5722 !important;
     .dropdown-item {
       color: #fff !important;
-    }
-    .dropdown-item:hover {
-      text-decoration: none !important;
-      background-color: #ff6404 !important;
+      &:hover {
+        text-decoration: none !important;
+        background-color: #ff6404 !important;
+      }
     }
   }
 }
@@ -87,13 +87,13 @@ body {
 main.container-fluid {
   margin: 110px auto 0;
   padding: 0 25px;
+
   .wrapper {
     background-color: #fff !important;
     border: 1px solid #e5e5e5;
     border-radius: 4px;
     display: flex;
     justify-items: flex-end;
-    // padding: 40px 20px 20px;
     padding: 20px;
     width: 100%;
   }
@@ -129,12 +129,25 @@ main.container-fluid {
     margin-bottom: 10px;
     color: #9f9f9f;
   }
+  .post-tags {
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 20px;
 
-  .archive {
+    a {
+      color: #111;
+      font-weight: 500;
+      &:hover {
+        color: #0056b3;
+      }
+    }
+  }
+
+  .archive-sidebar {
     background-color: #f9f9f9;
     border: 1px solid #e5e5e5;
     border-radius: 4px;
-    margin: 0 0 120px;
+    margin: 0 0 20px;
     padding: 20px;
     h3 {
       font-size: 1.5rem;
@@ -148,6 +161,14 @@ main.container-fluid {
         color: #666;
         margin-bottom: .75rem;
         text-shadow: 2px 2px 1px rgba(0,0,0,.15);
+        a {
+          color: #111;
+          text-decoration: none;
+          &:hover {
+            color: #0056b3;
+            text-decoration: underline;
+          }
+        }
       }
       summary::-webkit-details-marker {
         color: #666;
@@ -159,7 +180,11 @@ main.container-fluid {
     }
   }
 
-  .blog-partners {
+  .tag-cloud-sidebar {
+    padding: 1rem;
+  }
+
+  .blog-partners-sidebar {
     padding: 1rem;
     div {
         display: flex;
@@ -225,10 +250,10 @@ main.container-fluid {
   a {
     color: #aaa;
     text-decoration: none;
-  }
-  a:hover {
-    color: #111;
-    text-decoration: none;
+    &:hover {
+      color: #111;
+      text-decoration: none;
+    }
   }
   .previous {
     flex: 1;

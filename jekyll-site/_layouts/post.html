@@ -17,6 +17,12 @@ layout: default
     </div>
     {% endif %}
   </nav>
+  <div class="post-tags">
+    Tagged with: 
+    {% for tag in page.tags %}
+    <a href="{{ site.baseurl }}/tag/{{ tag }}/">{{ tag }}</a>
+    {% endfor %}
+  </div>
 </article>
 
 <aside class="">

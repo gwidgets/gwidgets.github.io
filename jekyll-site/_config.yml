@@ -32,14 +32,29 @@ logo: https://s3-eu-west-1.amazonaws.com/gwidgets/logo-with-background.png
 
 # Build settings
 markdown: kramdown
-# theme: minima
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-archives
 
-paginate: 12
-# paginate_path: "/archive/page:num"
+paginate: 10
+
+jekyll-archives:
+  enabled: all
+  layouts:
+    year: year-archive
+    month: month-archive
+    day: day-archive
+    category: category-archive
+    tag: tag-archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
