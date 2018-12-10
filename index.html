@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<section class="posts">
+  {% for post in paginator.posts %}
+  <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <div class="post-meta">Posted on
+    <a href="{{ post.url }}">
+      <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %d, %Y" }}</time>
+    </a> by
+    <a href="#">
+      Blogger
+    </a> &mdash;
+    <a href="{{ post.url }}/#">
+      No Comments &#x2B07;
+    </a>
+  </div>
+  <div class="post-content"><p style="margin-bottom: 1rem;"> {{ post.excerpt }} </p> <div style="clear: both;font-weight: 700;"><a href="{{ post.url }}">Read more > </a></div></div>
+  <p style="margin-bottom: 1rem;" ></p>
+  {% endfor %}
+
+  <nav class="navigation">
+    <div class="previous">
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}">&#8249; Previous</a>
+      {% endif %}
+    </div>
+
+    <span class="page_number ">
+      Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+
+    <div class="next">
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}">Next &#8250;</a>
+      {% endif %}
+    </div>
+  </nav>
+</section>
+
+<aside class="">
+  {% include archive-sidebar.html %}
+  {% include tag-cloud-sidebar.html %}
+  {% include blog-partners-sidebar.html %}
+</aside>

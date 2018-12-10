@@ -1,0 +1,105 @@
+---
+layout: page
+title: gwt-leaflet
+permalink: /gwty-leaflet/
+---
+<div class="github-fork-ribbon--container">
+  <a style="position: absolute; top: 110px; right: 25px; z-index:800;" href="https://github.com/gwidgets/gwty-leaflet" target="_blank">
+    <img src="https://s3-eu-west-1.amazonaws.com/gwidgets/uploads/2016/09/forkme.png" alt="Fork me on GitHub">
+  </a>
+</div>
+
+<div class="project-title">
+  <img class="img-rounded" src="https://s3-eu-west-1.amazonaws.com/gwidgets/uploads/2016/09/gwty-leaflet_new-150x58.png" alt="gwty-leaflet" />
+  <h2 class="project-title-header" style="margin-bottom:80px;">gwty-leaflet</h2>
+</div>
+
+<div class="container">
+  <div class="row">
+    <!-- Bootstrap Container -->
+    <!-- First part takes 8 columns -->
+    <div class="col-md-8">
+      <h4>Description</h4>
+      <p style="text-align:justify;"> gwty-leaflet is a GWT wrapper for the famous maps javascript library <a target="_blank" href="http://leafletjs.com/"> Leaflet</a>. gwty-leaflet is based on JsInterop and allows using Leaflet from your GWT
+        application exactly the same way as from a javascript script with a slight advantage: static typing. It was partially auto generated from Leaflet docs. </p>
+      <br />
+      <h4>Requirements</h4>
+      <ul style="list-style-type: circle;">
+        <li>
+          GWT 2.8.x
+        </li>
+        <li>
+          JDK 1.8
+        </li>
+      </ul>
+      <br />
+      <h4>QuickStart</h4>
+      <p style="text-align:justify;"> First of all, you need to import the library into your project either as a maven dependency or you can download the jar from <a href="https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.gwidgets%22%20AND%20a%3A%22gwty-leaflet%22">maven
+          central</a></p>
+      <pre class="brush: xml">
+                     &lt;dependency&gt;
+                        &lt;groupId&gt;com.gwidgets&lt;/groupId&gt;
+                        &lt;artifactId&gt;gwty-leaflet&lt;/artifactId&gt;
+                        &lt;version&gt;1.0&lt;/version&gt;
+                     &lt;/dependency&gt;
+      </pre>
+
+      Then, you can you can start creating maps and leaflet Objects using the L master class. For example:
+      <pre class="brush: java">
+   L.map("map", new MapOptions.Builder().build())
+   .setView(L.latLng(51.505, -0.09), 12, new ZoomPanOptions.Builder().build());
+      </pre>
+
+      You can refer to our quick starter guide project for a working example: <a href="https://github.com/gwidgets/gwty-leaflet-starter-guide"> https://github.com/gwidgets/gwty-leaflet-starter-guide </a>
+    </div>
+
+    <div class="col-md-4">
+      <div>
+        <div class="project-documentation--container">
+          <div class="item-dropdown-widget">
+            <div class="item--dropdown">
+              <div class="item--body">
+                <div class="item--body-title">
+                  <div class="item--left-column">Release</div>
+                  <div class="item--right-column">Documentation</div>
+                </div>
+                <div class="item--body--version">
+                  <div class="item--left-column">
+                    <p>1.0</p>
+                  </div>
+                  <div class="item--right-column">
+                    <a href="https://gwidgets.github.io/gwty-leaflet/javadoc/1.0/" class="docs-link api-link" target="_blank">API</a>
+                  </div>
+                </div>
+                <div class="item--body--version">
+                  <div class="item--left-column">
+                    <p>0.5</p>
+                  </div>
+                  <div class="item--right-column">
+                    <a href="https://gwidgets.github.io/gwty-leaflet/javadoc/0.5/doc" class="docs-link api-link" target="_blank">API</a>
+                  </div>
+                </div>
+                <div class="item--body--version">
+                  <div class="item--left-column">
+                    <p>0.4</p>
+                    <div class="spring-icon spring-icon-pre-release"></div>
+                  </div>
+                  <div class="item--right-column">
+                    <a href="https://gwidgets.github.io/gwty-leaflet/javadoc/0.4/" class="docs-link api-link" target="_blank">API</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin:20px;">
+          <img style="padding-left:10px;" src="https://s3-eu-west-1.amazonaws.com/gwidgets/uploads/2016/09/travis-ci-100x32.png">
+          <a href="https://travis-ci.org/gwidgets/gwty-leaflet" target="_blank">
+            <img src="https://travis-ci.org/gwidgets/gwty-leaflet.svg?branch=master">
+          </a>
+        </div>
+        <!-- Bootstrap Container -->
+      </div>
+    </div>
+  </div>
+</div>

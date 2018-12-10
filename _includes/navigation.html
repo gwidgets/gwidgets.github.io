@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top">
+  <a href="/" class="navbar-brand">
+    <img src="{{ site.baseurl }}/assets/images/compressed.png" height="110" alt="{{ site.title }}" />
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item {%if page.url == '/about/' %}nav-link-active{% endif %}">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+      <li class="nav-item {%if page.url == '/' %}nav-link-active{% endif %} ">
+        <a class="nav-link" href="/">Blog</a>
+      </li>
+      <li class="nav-item {%if page.url == '/courses/' %}nav-link-active{% endif %}">
+        <a class="nav-link" href="/courses">Courses</a>
+      </li>
+      <li class="nav-item dropdown {%if page.url == '/gwty-leaflet/' or page.url == '/gwt-ui-archetypes/' or  page.url == '/curlify/' %}nav-link-active{% endif %} ">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Open Source</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/gwty-leaflet">gwty-leaflet</a>
+          <a class="dropdown-item" href="/gwt-ui-archetypes">gwt-app-archetypes</a>
+          <a class="dropdown-item" href="/curlify">Curlify</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<a type="button" target="_blank" href="http://www.github.com/gwidgets/" class="btn btn-github"><i class="fab fa-github"></i></a>
+<a type="button" target="_blank" href="https://twitter.com/gwidgets_" class="btn btn-twitter"><i class="fab fa-twitter"></i></a>
+<a type="button" target="_blank" href="/feed" class="btn btn-rss"><i class="fas fa-rss"></i></a>
