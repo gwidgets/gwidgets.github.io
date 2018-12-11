@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: G-Widgets
-email: your-email@example.com
+email: contact@g-widgets.com
 description: Tutorials and discussions about JVM languages to-Javascript tools and frameworks ( GWT, Vaadin, Scala.js, ClojureScript, Kotlin to Javascript...)
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: www.g-widgets.com # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gwidgets_
 github_username:  gwidgets
 
