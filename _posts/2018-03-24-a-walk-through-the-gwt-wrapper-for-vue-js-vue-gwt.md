@@ -37,7 +37,6 @@ The demo application is an expenses entry application with two main components: 
      <div class="divider"></div>
      <ExpenseList :currencies="currencies" :expenses="expenses"/>
   </div>
-
 </template>
 
 <script>
@@ -196,7 +195,7 @@ export default {
     <input type="number" id="amountVAT" v-model="amountVAT" disabled/>
         <label for="currency">Currency: </label>
     <select id="currency" v-model="currency">
-            <option v-for="Currency currency in currencies"> {{ currency.getName() }} </option>
+            <option v-for="Currency currency in currencies"> {% raw %} {{ currency.getName() }} {% endraw %}</option>
         </select>
     <label for="date"  >Date: </label>
     <input type="date" id="date" value="2018/03/06" v-model="date"/>
@@ -252,12 +251,11 @@ The main difference between the two versions is the type enforcement in:
 
 {% highlight html  %}
        <select id="currency" v-model="currency">
-            <option v-for="Currency currency in currencies"> {{ currency.getName() }} </option>
+            <option v-for="Currency currency in currencies"> {% raw %} {{ currency.getName() }} {% endraw %} </option>
         </select>
 {% endhighlight %}
 
 which requires a special import tag:  `<vue-gwt:import class="com.gwidgets.client.dto.Currency"/>`
-
 The ExpenseList component looks like: 
 
 <div style="display: flex;">
@@ -277,10 +275,10 @@ The ExpenseList component looks like:
             </thead>
             <tbody>
                 <tr v-for="expense in expenses">
-                    <td>{{ expense.amount + getCurrencySymbol(expense.currency, currencies)}}</td>
+                    <td>{% raw %} {{ expense.amount + getCurrencySymbol(expense.currency, currencies)}} {% endraw %}</td>
                     <td>{{ expense.date }}</td>
                     <td>{{ expense.vatRate }}</td>
-                    <td>{{ expense.vat + getCurrencySymbol(expense.currency, currencies)}}</td>
+                    <td>{% raw %} {{ expense.vat + getCurrencySymbol(expense.currency, currencies)}} {% endraw %}</td>
                     <td>{{ expense.reason }}</td>
                 </tr>
 
@@ -329,10 +327,10 @@ The ExpenseList component looks like:
         </thead>
         <tbody>
         <tr v-for="Expense expense in expenses">
-            <td>{{ expense.amount + getCurrencySymbol(expense.currency)}}</td>
+            <td>{% raw %} {{ expense.amount + getCurrencySymbol(expense.currency)}} {% endraw %}</td>
             <td>{{ expense.date }}</td>
             <td>{{ expense.vatRate }}</td>
-            <td>{{ expense.amountVAT + getCurrencySymbol(expense.currency)}}</td>
+            <td>{% raw %} {{ expense.amountVAT + getCurrencySymbol(expense.currency)}} {% endraw %}</td>
             <td>{{ expense.reason }}</td>
         </tr>
         </tbody>
