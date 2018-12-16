@@ -17,7 +17,7 @@ title: G-Widgets
 email: contact@g-widgets.com
 description: Tutorials and discussions about JVM languages to-Javascript tools and frameworks ( GWT, Vaadin, Scala.js, ClojureScript, Kotlin to Javascript...)
 baseurl: "" # the subpath of your site, e.g. /blog
-url: www.g-widgets.com # the base hostname & protocol for your site, e.g. http://example.com
+url: http://www.g-widgets.com # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gwidgets_
 github_username:  gwidgets
 
