@@ -1,10 +1,9 @@
 ---
-id: 456
+id_disqus: 456
 title: Dockerizing a GWT app
 date: 2016-09-22T10:11:47+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=456
 permalink: /2016/09/22/dockerizing-a-gwt-app/
 comments: true
 dsq_needs_sync:

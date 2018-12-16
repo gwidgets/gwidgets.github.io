@@ -1,10 +1,9 @@
 ---
-id: 502
+id_disqus: 502
 title: Securing a GWT app using Spring security
 date: 2016-12-09T18:29:22+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=502
 permalink: /2016/12/09/securing-a-gwt-app-using-spring-security/
 comments: true
 dsq_needs_sync:

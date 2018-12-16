@@ -1,10 +1,9 @@
 ---
-id: 272
+id_disqus: 272
 title: 'JsInterop, Web Components, Polymer: A beginner&#8217;s guide'
 date: 2016-08-01T14:27:36+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=272
 permalink: /2016/08/01/jsinterop-web-components-polymer-a-beginners-guide/
 comments: true
 dsq_needs_sync:

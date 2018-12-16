@@ -1,10 +1,9 @@
 ---
-id: 653
+id_disqus: 653
 title: 'Quick Tip: Debugging a GWT application using Chrome Dev tools'
 date: 2017-06-29T17:28:33+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=653
 permalink: /2017/06/29/quick-tip-debugging-a-gwt-application-using-chrome-dev-tools/
 comments: true
 dsq_needs_sync:

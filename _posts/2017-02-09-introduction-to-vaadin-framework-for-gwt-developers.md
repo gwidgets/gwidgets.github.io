@@ -1,10 +1,9 @@
 ---
-id: 556
+id_disqus: 556
 title: Introduction to Vaadin Framework for GWT developers
 date: 2017-02-09T09:47:19+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=556
 permalink: /2017/02/09/introduction-to-vaadin-framework-for-gwt-developers/
 comments: true
 dsq_needs_sync:

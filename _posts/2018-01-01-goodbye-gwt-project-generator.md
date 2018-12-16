@@ -1,10 +1,9 @@
 ---
-id: 745
+id_disqus: 745
 title: Goodbye gwt-project-generator!
 date: 2018-01-01T14:38:28+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=745
 permalink: /2018/01/01/goodbye-gwt-project-generator/
 comments: true
 dsq_needs_sync:

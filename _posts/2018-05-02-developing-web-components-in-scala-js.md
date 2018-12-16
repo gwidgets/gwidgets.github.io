@@ -1,10 +1,9 @@
 ---
-id: 796
+id_disqus: 796
 title: Developing Web Components in Scala.js
 date: 2018-05-02T10:31:09+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=796
 permalink: /2018/05/02/developing-web-components-in-scala-js/
 comments: true
 tags:

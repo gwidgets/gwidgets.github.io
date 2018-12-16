@@ -1,10 +1,9 @@
 ---
-id: 240
+id_disqus: 240
 title: Browser History Management in GWT using Activity and Place
 date: 2016-02-05T15:39:48+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=240
 permalink: /2016/02/05/browser-history-management-in-gwt-using-activity-and-place/
 comments: true
 dsq_needs_sync:

@@ -1,10 +1,9 @@
 ---
-id: 403
+id_disqus: 403
 title: A GWT maven progressive web app archetype is up on Github
 date: 2016-08-31T20:37:55+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=403
 permalink: /2016/08/31/a-gwt-maven-progressive-web-app-archetype-is-up-on-github/
 comments: true
 dsq_needs_sync:

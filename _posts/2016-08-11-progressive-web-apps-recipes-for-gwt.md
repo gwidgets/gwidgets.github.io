@@ -1,10 +1,9 @@
 ---
-id: 301
+id_disqus: 301
 title: Progressive Web apps recipes for GWT
 date: 2016-08-11T09:03:55+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=301
 permalink: /2016/08/11/progressive-web-apps-recipes-for-gwt/
 comments: true
 dsq_needs_sync:

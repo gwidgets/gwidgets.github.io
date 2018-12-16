@@ -1,10 +1,9 @@
 ---
-id: 677
+id_disqus: 677
 title: 'Vaadin Tip: building UIs declaratively'
 date: 2017-07-05T15:10:03+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=677
 permalink: /2017/07/05/vaadin-tip-building-uis-declaratively/
 comments: true
 dsq_needs_sync:

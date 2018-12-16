@@ -1,10 +1,9 @@
 ---
-id: 850
+id_disqus: 850
 title: Introduction to Kotlin (to) JavaScript
 date: 2018-05-17T18:51:42+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=850
 permalink: /2018/05/17/introduction-to-kotlin-to-javascript/
 comments: true
 tags:

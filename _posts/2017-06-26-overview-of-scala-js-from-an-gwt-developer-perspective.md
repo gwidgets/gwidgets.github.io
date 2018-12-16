@@ -1,10 +1,9 @@
 ---
-id: 626
+id_disqus: 626
 title: Overview of Scala.js from a GWT developer perspective
 date: 2017-06-26T20:55:48+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=626
 permalink: /2017/06/26/overview-of-scala-js-from-an-gwt-developer-perspective/
 comments: true
 dsq_needs_sync:

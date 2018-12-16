@@ -1,10 +1,9 @@
 ---
-id: 581
+id_disqus: 581
 title: Comments about the GWT maven plugin poll results
 date: 2017-03-10T10:07:40+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=581
 permalink: /2017/03/10/comments-about-the-gwt-maven-plugin-poll-results/
 comments: true
 dsq_needs_sync:

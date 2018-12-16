@@ -1,10 +1,9 @@
 ---
-id: 708
+id_disqus: 708
 title: 'New feature in gwty-leaflet: debug/prod mode.'
 date: 2017-08-28T09:40:01+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=708
 permalink: /2017/08/28/new-feature-in-gwty-leaflet-debugprod-mode/
 comments: true
 dsq_needs_sync:

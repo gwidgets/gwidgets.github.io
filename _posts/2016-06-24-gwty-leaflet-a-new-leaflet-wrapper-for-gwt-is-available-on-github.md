@@ -1,10 +1,9 @@
 ---
-id: 262
+id_disqus: 262
 title: 'gwty-leaflet: a new Leaflet wrapper for GWT is available on Github'
 date: 2016-06-24T17:44:43+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=262
 permalink: /2016/06/24/gwty-leaflet-a-new-leaflet-wrapper-for-gwt-is-available-on-github/
 comments: true
 dsq_needs_sync:

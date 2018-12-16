@@ -1,10 +1,9 @@
 ---
-id: 620
+id_disqus: 620
 title: G-Widgets is now partner of the GwtCon 2017
 date: 2017-06-22T14:22:54+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=620
 permalink: /2017/06/22/g-widgets-is-now-partner-of-the-gwtcon-2017/
 comments: true
 dsq_needs_sync:

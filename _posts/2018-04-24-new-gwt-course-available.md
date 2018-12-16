@@ -1,10 +1,9 @@
 ---
-id: 788
+id_disqus: 788
 title: New GWT course available
 date: 2018-04-24T09:56:08+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=788
 permalink: /2018/04/24/new-gwt-course-available/
 comments: true
 excerpt: We are happy to announce the publication of our new Udemy course about GWT and how to use GWT as a complementary framework for leveraging the benefits of Java while working with JavaScript...

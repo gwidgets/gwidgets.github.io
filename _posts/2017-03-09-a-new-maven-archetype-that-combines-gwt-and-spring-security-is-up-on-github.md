@@ -1,10 +1,9 @@
 ---
-id: 579
+id_disqus: 579
 title: A new maven archetype that combines GWT and Spring Security is up on Github
 date: 2017-03-09T16:07:53+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=579
 permalink: /2017/03/09/a-new-maven-archetype-that-combines-gwt-and-spring-security-is-up-on-github/
 comments: true
 dsq_needs_sync:

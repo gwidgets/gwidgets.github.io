@@ -1,10 +1,9 @@
 ---
-id: 827
+id_disqus: 827
 title: Working with JSON in Scala.js
 date: 2018-05-08T08:30:10+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=827
 permalink: /2018/05/08/working-with-json-in-scala-js/
 comments: true
 tags:
@@ -22,13 +21,13 @@ Working with JSON is almost inevitable regardless of the environment. In this po
 
 We will use the following object for all the examples for uPickle and Circe:
 
-<pre class="brush:scala">case class Car(id: String, brand: String, model: String) {}</pre>
+<pre class="brush:scala">case class Car(id_disqus: String, brand: String, model: String) {}</pre>
 
 using scalajs-dom requires a slight modification to the object as only `js.Object` is allowed
 
 {% highlight scala %}
  class Car extends js.Object {
-  var id: String = _
+  var id_disqus: String = _
   var brand: String = _
   var model: String = _
 }

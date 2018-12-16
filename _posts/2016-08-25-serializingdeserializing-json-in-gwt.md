@@ -1,10 +1,9 @@
 ---
-id: 388
+id_disqus: 388
 title: Serializing/Deserializing Json in GWT
 date: 2016-08-25T16:20:35+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=388
 permalink: /2016/08/25/serializingdeserializing-json-in-gwt/
 comments: true
 dsq_needs_sync:

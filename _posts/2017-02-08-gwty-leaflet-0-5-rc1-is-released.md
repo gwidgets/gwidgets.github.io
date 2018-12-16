@@ -1,10 +1,9 @@
 ---
-id: 575
+id_disqus: 575
 title: gwty-leaflet 0.5-rc1 is released
 date: 2017-02-08T17:29:37+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=575
 permalink: /2017/02/08/gwty-leaflet-0-5-rc1-is-released/
 comments: true
 dsq_needs_sync:

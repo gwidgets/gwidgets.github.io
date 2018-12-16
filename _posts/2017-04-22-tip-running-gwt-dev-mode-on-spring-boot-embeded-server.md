@@ -1,10 +1,9 @@
 ---
-id: 607
+id_disqus: 607
 title: 'TIP: Running GWT dev mode on Spring Boot Embeded Server'
 date: 2017-04-22T15:04:01+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=607
 permalink: /2017/04/22/tip-running-gwt-dev-mode-on-spring-boot-embeded-server/
 comments: true
 dsq_needs_sync:

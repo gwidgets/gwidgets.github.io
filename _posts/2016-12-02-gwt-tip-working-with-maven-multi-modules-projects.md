@@ -1,10 +1,9 @@
 ---
-id: 483
+id_disqus: 483
 title: 'GWT Tip: working with maven multi-modules projects'
 date: 2016-12-02T10:06:26+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=483
 permalink: /2016/12/02/gwt-tip-working-with-maven-multi-modules-projects/
 comments: true
 dsq_needs_sync:

@@ -1,10 +1,9 @@
 ---
-id: 590
+id_disqus: 590
 title: Example of Using WebSockets in GWT ( with a Spring Boot Server)
 date: 2017-03-16T14:26:58+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=590
 permalink: /2017/03/16/example-of-using-websockets-in-gwt-with-a-spring-boot-server/
 comments: true
 dsq_needs_sync:

@@ -1,10 +1,9 @@
 ---
-id: 475
+id_disqus: 475
 title: 'gwty-leaflet: features and upcoming changes'
 date: 2016-11-29T20:12:50+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=475
 permalink: /2016/11/29/gwty-leaflet-features-and-upcoming-changes/
 comments: true
 dsq_needs_sync:

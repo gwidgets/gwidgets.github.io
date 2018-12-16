@@ -1,10 +1,9 @@
 ---
-id: 235
+id_disqus: 235
 title: 'Introduction to the MVP pattern: a GWT example'
 date: 2016-01-19T19:50:47+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=235
 permalink: /2016/01/19/introduction-to-the-mvp-pattern-in-gwt/
 comments: true
 dsq_needs_sync:

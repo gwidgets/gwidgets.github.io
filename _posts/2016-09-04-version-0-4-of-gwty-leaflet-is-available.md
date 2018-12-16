@@ -1,10 +1,9 @@
 ---
-id: 405
+id_disqus: 405
 title: Version 0.4 of gwty-leaflet is available
 date: 2016-09-04T12:05:05+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=405
 permalink: /2016/09/04/version-0-4-of-gwty-leaflet-is-available/
 comments: true
 dsq_needs_sync:

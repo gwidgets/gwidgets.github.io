@@ -1,10 +1,9 @@
 ---
-id: 258
+id_disqus: 258
 title: GWT Polymer Starter is on GitHub
 date: 2016-05-01T12:49:19+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=258
 permalink: /2016/05/01/gwt-polymer-starter-is-on-github/
 comments: true
 dsq_needs_sync:

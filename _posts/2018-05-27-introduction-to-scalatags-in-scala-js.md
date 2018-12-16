@@ -1,10 +1,9 @@
 ---
-id: 836
+id_disqus: 836
 title: Introduction to scalatags in Scala.js
 date: 2018-05-27T18:34:38+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=836
 permalink: /2018/05/27/introduction-to-scalatags-in-scala-js/
 comments: true
 tags:

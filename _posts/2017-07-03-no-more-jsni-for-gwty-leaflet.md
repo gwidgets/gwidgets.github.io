@@ -1,10 +1,9 @@
 ---
-id: 668
+id_disqus: 668
 title: No more JSNI for gwty-leaflet
 date: 2017-07-03T09:13:50+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=668
 permalink: /2017/07/03/no-more-jsni-for-gwty-leaflet/
 comments: true
 dsq_needs_sync:

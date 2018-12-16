@@ -1,10 +1,9 @@
 ---
-id: 695
+id_disqus: 695
 title: Introduction to Errai Framework
 date: 2017-09-24T13:50:59+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=695
 permalink: /2017/09/24/introduction-to-errai-framework/
 comments: true
 dsq_needs_sync:

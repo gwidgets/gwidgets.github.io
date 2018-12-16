@@ -1,10 +1,9 @@
 ---
-id: 782
+id_disqus: 782
 title: 'A walk through the GWT wrapper for Vue.js: vue-gwt'
 date: 2018-03-24T10:30:25+00:00
 author: blogger
 layout: post
-guid: http://159.65.93.138/?p=782
 permalink: /2018/03/24/a-walk-through-the-gwt-wrapper-for-vue-js-vue-gwt/
 comments: true
 tags:

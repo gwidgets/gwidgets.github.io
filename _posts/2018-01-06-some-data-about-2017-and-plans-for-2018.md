@@ -1,10 +1,9 @@
 ---
-id: 750
+id_disqus: 750
 title: Some data about 2017, and plans for 2018 !
 date: 2018-01-06T15:12:00+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=750
 permalink: /2018/01/06/some-data-about-2017-and-plans-for-2018/
 comments: true
 dsq_needs_sync:

@@ -1,10 +1,9 @@
 ---
-id: 711
+id_disqus: 711
 title: Options objects bug in gwty-leaflet is fixed now.
 date: 2017-09-23T14:25:29+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=711
 permalink: /2017/09/23/options-objects-bug-in-gwty-leaflet-is-fixed-now/
 comments: true
 dsq_needs_sync:

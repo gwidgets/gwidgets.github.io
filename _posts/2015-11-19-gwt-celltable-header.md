@@ -1,10 +1,9 @@
 ---
-id: 83
+id_disqus: 83
 title: Customized CellTable Header in GWT
 date: 2015-11-19T20:26:54+00:00
 author: blogger
 layout: post
-guid: http://localhost/wordpress2/?p=83
 permalink: /2015/11/19/gwt-celltable-header/
 comments: true
 dsq_needs_sync:

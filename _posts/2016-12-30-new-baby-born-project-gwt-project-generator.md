@@ -1,10 +1,9 @@
 ---
-id: 535
+id_disqus: 535
 title: 'New baby born project: gwt-project-generator'
 date: 2016-12-30T19:04:14+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=535
 permalink: /2016/12/30/new-baby-born-project-gwt-project-generator/
 comments: true
 dsq_needs_sync:

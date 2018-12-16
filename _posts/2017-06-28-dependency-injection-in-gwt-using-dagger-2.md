@@ -1,10 +1,9 @@
 ---
-id: 641
+id_disqus: 641
 title: Dependency injection in GWT using Dagger 2
 date: 2017-06-28T18:34:23+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=641
 permalink: /2017/06/28/dependency-injection-in-gwt-using-dagger-2/
 comments: true
 dsq_needs_sync:

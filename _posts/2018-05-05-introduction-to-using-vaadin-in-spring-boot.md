@@ -1,10 +1,9 @@
 ---
-id: 742
+id_disqus: 742
 title: Introduction to using Vaadin in Spring Boot
 date: 2018-05-05T10:05:44+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=742
 permalink: /2018/05/05/introduction-to-using-vaadin-in-spring-boot/
 comments: true
 tags:

@@ -1,10 +1,9 @@
 ---
-id: 85
+id_disqus: 85
 title: Building a Tree Grid using GXT / GWT
 date: 2015-11-19T20:29:46+00:00
 author: blogger
 layout: post
-guid: http://localhost/wordpress2/?p=85
 permalink: /2015/11/19/building-a-tree-grid-using-gxt-gwt/
 comments: true
 dsq_needs_sync:
@@ -44,7 +43,7 @@ The first thing we need to do is to create a google web application project. Go 
   Now, we are going to create our widget using the following components:
 </p>
 
-&#8211; TreeGrid: the actual treegrid widget
+&#8211; TreeGrid_disqus: the actual treegrid widget
   
 &#8211; ColumnConfig: object used for configuring columns
   

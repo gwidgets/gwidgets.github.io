@@ -1,10 +1,9 @@
 ---
-id: 841
+id_disqus: 841
 title: Reactive GWT
 date: 2018-05-09T15:11:39+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=841
 permalink: /2018/05/09/reactive-gwt/
 comments: true
 tags:

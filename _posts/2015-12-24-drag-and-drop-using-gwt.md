@@ -1,10 +1,9 @@
 ---
-id: 217
+id_disqus: 217
 title: Drag and Drop using GWT
 date: 2015-12-24T20:15:47+00:00
 author: blogger
 layout: post
-guid: http://localhost/wordpress2/?p=217
 permalink: /2015/12/24/drag-and-drop-using-gwt/
 comments: true
 dsq_needs_sync:

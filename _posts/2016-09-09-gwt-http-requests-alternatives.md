@@ -1,10 +1,9 @@
 ---
-id: 408
+id_disqus: 408
 title: GWT HTTP requests alternatives
 date: 2016-09-09T21:46:47+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=408
 permalink: /2016/09/09/gwt-http-requests-alternatives/
 comments: true
 dsq_needs_sync:

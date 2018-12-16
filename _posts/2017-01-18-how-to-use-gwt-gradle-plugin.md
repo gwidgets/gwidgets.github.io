@@ -1,10 +1,9 @@
 ---
-id: 540
+id_disqus: 540
 title: How to use GWT gradle plugin
 date: 2017-01-18T19:43:11+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=540
 permalink: /2017/01/18/how-to-use-gwt-gradle-plugin/
 comments: true
 dsq_needs_sync:

@@ -1,10 +1,9 @@
 ---
-id: 299
+id_disqus: 299
 title: New Maven archetypes for GWT
 date: 2016-08-06T13:47:07+00:00
 author: blogger
 layout: post
-guid: http://www.g-widgets.com/?p=299
 permalink: /2016/08/06/new-maven-archetypes-for-gwt/
 comments: true
 dsq_needs_sync:
